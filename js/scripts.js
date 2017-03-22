@@ -1,17 +1,20 @@
 // https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js
+$('#sidr-show-hide').sidr();
 
+$('#close').sidr({
+  method: 'close'
+});
+
+// call Sidr Plugin. Toggle by Default
 $('#sidr-show-hide').sidr({
-    timimg:'ease-in',
 	speed:500
 });
 
 $('#close').sidr({
-  method: 'close',
+  method: 'toggle',
 	timimg:'ease-out',
 	speed:500
 });
-
-
 
 
 // SPOKANE Weather

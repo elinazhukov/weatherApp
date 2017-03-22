@@ -36,6 +36,8 @@ figcaption {
     
 }  
 
+
+
 .bad {
 background: #7a7f56; /* Old browsers */
 background: -moz-linear-gradient(-45deg, #7a7f56 0%, #634a0b 29%, #828401 81%, #bf6e4e 100%); /* FF3.6-15 */
@@ -85,6 +87,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e7e9b', end
 aside i {
    font-size: 4em;
 
+
     
 }
 aside .day-one {
@@ -126,7 +129,7 @@ aside .day-three {
     width: 15em;
     overflow-x: hidden;
     overflow-y: auto;
-    background: lightgray;
+    background: dimgrey;
 }
 
 .left {
@@ -134,25 +137,6 @@ aside .day-three {
     right: auto;
 }
 
-$sidebar-width: 16em;
-$sidebar-width-neg: -16em;
-
-.sidr {
-    display: block;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    z-index: 999999;
-    width: $sidebar-width;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    &.left {
-        left: $sidebar-width-neg;
-        right: auto;
-    }
-}
-
 
 $sidebar-width: 16em;
 $sidebar-width-neg: -16em;
@@ -173,28 +157,34 @@ $sidebar-width-neg: -16em;
     }
 }
 
-/*Sections*/
-wrapper {
-  height: 20em;
-  width: 100%;
-  position: absolute;
- 
-}
-#one {
-  background: red;
+
+a {
+    text-decoration: none;
+    color: lightgrey;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin: 10px;    
 }
 
-#two {
-  background: green;
+
+li {
+    list-style-type: none;
 }
 
-#three {
-  background: blue;
+#close {
+    
+    font-size: 3em;
+    display: flex;
+    align-content: center;
+    color: dimgrey;
+    background-color: lightgray;
+    border-radius: 10%
+    margin: 2em;
+    padding: 12px;
+    
 }
 
-:target {
-  z-index: 1;
-}
+
 
 /********************
 MEDIA QUERIES
@@ -206,21 +196,9 @@ MEDIA QUERIES
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
-
 }
 
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
 
 }
