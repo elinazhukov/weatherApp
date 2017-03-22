@@ -3,7 +3,7 @@
 // SPOKANE Weather
 
 $.simpleWeather({
-    location: 'spokane',
+    location: 'new york',
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -14,6 +14,7 @@ $.simpleWeather({
       $('.temp').text(weather.temp);
       $('i').addClass( 'icon-' + weather.code );
       $('figcaption').text(weather.currently);
+      $('humidity').text(weather.humidity);
         
 // Display Future Weather
       // Day 1
@@ -36,7 +37,7 @@ $.simpleWeather({
             
       //If functions
       if ( weather.code >= 0 && weather.code <= 7 ) {
-         $('body').addClass('really bad');
+         $('body').addClass('bad');
       }
           
       if ( weather.code >= 8 && weather.code <= 17 ) {
@@ -53,16 +54,22 @@ $.simpleWeather({
           
       if ( weather.code >= 23 && weather.code <= 29 ) {
          $('body').addClass('cloudy');
-      }
-          
-      if ( weather.code >= 23 && weather.code <= 29 ) {
-         $('body').addClass('cloudy');
-      }   
+      } 
     
       if ( weather.code >= 30 && weather.code <= 36 ) {
          $('body').addClass('sunny');   
       }
-            
+    
+      if ( weather.code >= 37 && weather.code <= 40 ) {
+         $('body').addClass('thunderstorms');   
+      }
+      if ( weather.code >= 41 && weather.code <= 43 ) {
+         $('body').addClass('snow');   
+      }
+      if ( weather.code >= 41 && weather.code <= 43 ) {
+         $('body').addClass('gross');   
+      }
+          
           
           
       

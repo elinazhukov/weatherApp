@@ -5,21 +5,26 @@ body {
     font-family: 'Assistant', sans-serif;
 }
 
+.city {
+    border-bottom: solid silver thin;
+    display: block; 
+}
+
 h1 {
     font-size: 2em;
     color: beige;
-    border-bottom: solid silver thin;
     text-align: center; 
     padding: 10px
 }
+
 
 .temp {
     font-size: 5em;
 }
 
 figcaption {
-    display: center;
     text-align: center;
+    color: beige;
     
 }  
 
@@ -28,20 +33,38 @@ i {
   font-size: 12em;
   
 }
-
-.sunny {
-    background-color: lightgoldenrodyellow;
+.bad {
+    background-color: darkkhaki;
 }
-
+.wet {
+    background-color: darkcyan;
+}
+.misty {
+    background-color: grey;
+}
+.sunny {
+    background-color: sandybrown;
+}
 .cloudy {
     background-color: darkgray;
- 
 }
+.sunny {
+  background-color: orange;
+}
+.thunderstorms {
+    background-color: cadetblue;
+}
+.snow {
+    background-color: snow;
 }
 
-.rainy {
-  background: blue;
+.gross {
+    background-color: burlywood;
 }
+
+
+
+
 aside i {
    font-size: 4em;
 
