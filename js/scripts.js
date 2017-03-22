@@ -37,37 +37,37 @@ $.simpleWeather({
             
       //If functions
       if ( weather.code >= 0 && weather.code <= 7 ) {
-         $('body').addClass('bad');
+         $('div').addClass('bad');
       }
           
       if ( weather.code >= 8 && weather.code <= 17 ) {
-         $('body').addClass('wet');
+         $('div').addClass('wet');
       }      
     
       if ( weather.code >= 18 && weather.code <= 19 ) {
-         $('body').addClass('misty');
+         $('div').addClass('misty');
       }
           
       if ( weather.code >= 20 && weather.code <= 22 ) {
-         $('body').addClass('crummy');
+         $('div').addClass('crummy');
       }
           
       if ( weather.code >= 23 && weather.code <= 29 ) {
-         $('body').addClass('cloudy');
+         $('div').addClass('cloudy');
       } 
     
       if ( weather.code >= 30 && weather.code <= 36 ) {
-         $('body').addClass('sunny');   
+         $('div').addClass('sunny');   
       }
     
       if ( weather.code >= 37 && weather.code <= 40 ) {
-         $('body').addClass('thunderstorms');   
+         $('div').addClass('thunderstorms');   
       }
       if ( weather.code >= 41 && weather.code <= 43 ) {
-         $('body').addClass('snow');   
+         $('div').addClass('snow');   
       }
       if ( weather.code >= 41 && weather.code <= 43 ) {
-         $('body').addClass('gross');   
+         $('div').addClass('gross');   
       }
           
           

@@ -6,15 +6,19 @@ body {
 }
 
 .city {
-    border-bottom: solid silver thin;
-    display: block; 
+    color: grey;
+   
 }
 
 h1 {
     font-size: 2em;
     color: beige;
     text-align: center; 
-    padding: 10px
+}
+
+h1 i{
+ font-size: 3em;
+ text-align: center;
 }
 
 
@@ -28,11 +32,6 @@ figcaption {
     
 }  
 
-i {
-  color: beige;
-  font-size: 12em;
-  
-}
 .bad {
     background-color: darkkhaki;
 }
@@ -71,16 +70,16 @@ aside i {
     
 }
 aside .day-one {
-    font-size: 12px;
-    color: beige;
+    font-size: 1em;
+    color: dimgrey;
     display: flex;
 	flex-direction: row;
 	justify-content:space-around;   
 }
 
 aside .day-two {
-    font-size: 12px;
-    color: beige;
+    font-size: 1em;
+    color: dimgray;
     display: flex;
 	flex-direction: row;
 	justify-content:space-around;
@@ -88,8 +87,8 @@ aside .day-two {
 }
 
 aside .day-three {
-    font-size: 12px;
-    color: beige;
+    font-size: 1em;
+    color: dimgray;
     display: flex;
 	flex-direction: row;
 	justify-content:space-around;
