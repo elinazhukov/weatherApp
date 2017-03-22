@@ -5,6 +5,10 @@ body {
     font-family: 'Assistant', sans-serif;
 }
 
+div {
+    padding: 20px;
+}
+
 .city {
     color: grey;
    
@@ -33,19 +37,35 @@ figcaption {
 }  
 
 .bad {
-    background-color: darkkhaki;
+background: #7a7f56; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #7a7f56 0%, #634a0b 29%, #828401 81%, #bf6e4e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #7a7f56 0%,#634a0b 29%,#828401 81%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #7a7f56 0%,#634a0b 29%,#828401 81%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a7f56', endColorstr='#bf6e4e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .wet {
-    background-color: darkcyan;
+background: #3f4c6b; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #3f4c6b 0%, #1a2728 23%, #1a2728 23%, #7a939b 59%, #3f4c6b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #3f4c6b 0%,#1a2728 23%,#1a2728 23%,#7a939b 59%,#3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #3f4c6b 0%,#1a2728 23%,#1a2728 23%,#7a939b 59%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .misty {
     background-color: grey;
 }
 .sunny {
-    background-color: sandybrown;
+background: #ff0202; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ff0202 0%, #ffaa02 53%, #afff02 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ff0202 0%,#ffaa02 53%,#afff02 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ff0202 0%,#ffaa02 53%,#afff02 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0202', endColorstr='#afff02',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .cloudy {
-    background-color: darkgray;
+background: #6e7e9b; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #6e7e9b 0%, #aebfbc 22%, #297a8e 33%, #8ea6a2 50%, #616893 67%, #4e5c5a 82%, #385f66 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #6e7e9b 0%,#aebfbc 22%,#297a8e 33%,#8ea6a2 50%,#616893 67%,#4e5c5a 82%,#385f66 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #6e7e9b 0%,#aebfbc 22%,#297a8e 33%,#8ea6a2 50%,#616893 67%,#4e5c5a 82%,#385f66 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e7e9b', endColorstr='#385f66',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .sunny {
   background-color: orange;

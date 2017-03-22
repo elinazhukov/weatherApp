@@ -3,7 +3,7 @@
 // SPOKANE Weather
 
 $.simpleWeather({
-    location: 'spokane',
+    location: '098646',
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -14,12 +14,13 @@ $.simpleWeather({
       $('.temp').text(weather.temp);
       $('i').addClass( 'icon-' + weather.code );
       $('figcaption').text(weather.currently);
-      $('humidity').text(weather.humidity);
+    
         
 // Display Future Weather
       // Day 1
       $('aside figure:nth-child(1) h2').text(weather.forecast[0].day);
       $('aside figure:nth-child(1) .high').text(weather.forecast[0].high);
+      $('aside figure:nth-child(1) .low').text(weather.forecast[0].low);
       $('i').addClass( 'icon-' + weather.code );
         
       // Day 2
