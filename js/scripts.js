@@ -9,12 +9,31 @@ $.simpleWeather({
       // Entire weather object
       console.log(weather);
       
-      // Display Data
+// Display Data
       $('.city').text(weather.city);
       $('.temp').text(weather.temp);
       $('i').addClass( 'icon-' + weather.code );
-      
-      // Get Condition Code
+        
+// Display Future Weather
+      // Day 1
+      $('aside figure:nth-child(1) h2').text(weather.forecast[0].day);
+      $('aside figure:nth-child(1) figcaption').text(weather.forecast[0].text);
+      $('aside figure:nth-child(1) .high').text(weather.forecast[0].high);
+      $('i').addClass( 'icon-' + weather.code );
+        
+      // Day 2
+      $('aside figure:nth-child(2) h2').text(weather.forecast[1].day);
+      $('aside figure:nth-child(2) figcaption').text(weather.forecast[1].text);
+      $('aside figure:nth-child(2) .high').text(weather.forecast[1].high);
+      $('i').addClass( 'icon-' + weather.code );
+        
+      // Day 3
+      $('aside figure:nth-child(3) h2').text(weather.forecast[2].day);
+      $('aside figure:nth-child(3) figcaption').text(weather.forecast[2].text);
+      $('aside figure:nth-child(3) .high').text(weather.forecast[2].high);
+      $('i').addClass( 'icon-' + weather.code );
+        
+// Get Condition Code
       console.log(weather.code);
             
       //If functions

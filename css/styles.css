@@ -23,6 +23,25 @@ i {
 }
 
 
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+
+aside figure {
+  padding: .5em;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
 /********************
 MEDIA QUERIES
 *******************/
