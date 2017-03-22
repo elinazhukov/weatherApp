@@ -2,39 +2,24 @@
 YOUR STYLES
 *******************/
 
-
-#location {
-    background: red;
+i {
+  color: teal;
+  font-size: 12em;
+  text-shadow: 0 0 20px;
 }
 
-.city {
-    text-transform: uppercase;
-    font-size: 1em;
+
+
+.sunny {
+  background: yellow;
 }
 
-$sidebar-width: 15em;
-$sidebar-width-neg:  -15em;
+.cloudy {
+  background: gray;
+}
 
-.sidr {
-    background: yellow;
-    display: block;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    z-index: 999999;
-    width: $sidebar-width;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    &.right {
-        left: auto;
-        right: $sidebar-width-neg;
-    }
-
-    &.left {
-        left: $sidebar-width-neg;
-        right: auto;
-    }
+.rainy {
+  background: blue;
 }
 
 
