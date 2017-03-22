@@ -1,17 +1,18 @@
 // https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js
-$('#sidr-show-hide').sidr();
 
-$('#close').sidr({
-  method: 'close'
-});
-
-// call Sidr Plugin. Toggle by Default
+//Call Sidr Plugin
 $('#sidr-show-hide').sidr({
 	speed:500
 });
 
 $('#close').sidr({
   method: 'toggle',
+	timimg:'ease-out',
+	speed:500
+});
+
+$('section').sidr({
+	method: 'close',
 	timimg:'ease-out',
 	speed:500
 });
@@ -96,3 +97,84 @@ $.simpleWeather({
   
   });
 
+// London Weather
+
+$.simpleWeather({
+    location: 'london',
+    unit: 'f',
+    success: function(weather) {
+      // Entire weather object
+      console.log(weather);
+      
+// Display Data
+      $('#london.city').text(weather.city);
+      $('#london.temp').text(weather.temp);
+      $('#london i').addClass( 'icon-' + weather.code );
+      $('#london figcaption').text(weather.currently);
+    
+        
+// Display Future Weather
+      // Day 1
+      $('#london aside figure:nth-child(1) h2').text(weather.forecast[0].day);
+      $('#london aside figure:nth-child(1) .high').text(weather.forecast[0].high);
+      $('#london aside figure:nth-child(1) .low').text(weather.forecast[0].low);
+      $('i').addClass( 'icon-' + weather.code );
+        
+      // Day 2
+      $('#london aside figure:nth-child(2) h2').text(weather.forecast[1].day);
+      $('#london aside figure:nth-child(2) .high').text(weather.forecast[1].high);
+      $('i').addClass( 'icon-' + weather.code );
+        
+      // Day 3
+      $('#london aside figure:nth-child(3) h2').text(weather.forecast[2].day);
+      $('#london aside figure:nth-child(3) .high').text(weather.forecast[2].high);
+      $('i').addClass( 'icon-' + weather.code );
+       
+    // Change Icon w/ Condition code
+
+        
+// Get Condition Code
+      console.log(weather.code);
+            
+      //If functions
+      if ( weather.code >= 0 && weather.code <= 7 ) {
+         $('div').addClass('bad');
+      }
+          
+      if ( weather.code >= 8 && weather.code <= 17 ) {
+         $('div').addClass('wet');
+      }      
+    
+      if ( weather.code >= 18 && weather.code <= 19 ) {
+         $('div').addClass('misty');
+      }
+          
+      if ( weather.code >= 20 && weather.code <= 22 ) {
+         $('div').addClass('crummy');
+      }
+          
+      if ( weather.code >= 23 && weather.code <= 29 ) {
+         $('div').addClass('cloudy');
+      } 
+    
+      if ( weather.code >= 30 && weather.code <= 36 ) {
+         $('div').addClass('sunny');   
+      }
+    
+      if ( weather.code >= 37 && weather.code <= 40 ) {
+         $('div').addClass('thunderstorms');   
+      }
+      if ( weather.code >= 41 && weather.code <= 43 ) {
+         $('div').addClass('snow');   
+      }
+      if ( weather.code >= 41 && weather.code <= 43 ) {
+         $('div').addClass('gross');   
+      }       
+      
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look outside.');
+    }
+  
+  });
