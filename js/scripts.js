@@ -3,7 +3,7 @@
 // SPOKANE Weather
 
 $.simpleWeather({
-    location: 'new york',
+    location: 'spokane',
     unit: 'f',
     success: function(weather) {
       // Entire weather object
